@@ -1,6 +1,8 @@
-import { Typography } from "@/components/common/Typography/Typography";
+import LatestWork from "@/components/custom/Home/Work";
 import Layout from "../../components/layout/Layout";
-import { Section } from "@/components/layout/Section/Section";
+import Contact from "@/components/custom/Home/Contact";
+import About from "@/components/custom/Home/About";
+import What from "@/components/custom/Home/What";
 import {
   Hero,
   Background,
@@ -28,9 +30,10 @@ const Home = () => {
         </Content>
         <ScrollIcon align="center" />
       </Hero>
-      <Section>
-        <Typography variant={"h1"}>Heading h1</Typography>
-      </Section>
+      <About />
+      <What />
+      <LatestWork />
+      <Contact />
     </Layout>
   );
 };

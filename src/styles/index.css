@@ -1,22 +1,12 @@
 @import 'tailwindcss';
 
-@plugin 'tailwindcss-animate';
+/* @plugin 'tailwindcss-animate'; */
 
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --radius-lg: var(--radius);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-sm: calc(var(--radius) - 4px);
-
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
-
-  --color-card: hsl(var(--card));
-  --color-card-foreground: hsl(var(--card-foreground));
-
-  --color-popover: hsl(var(--popover));
-  --color-popover-foreground: hsl(var(--popover-foreground));
 
   --color-primary: hsl(var(--primary));
   --color-primary-foreground: hsl(var(--primary-foreground));
@@ -34,14 +24,14 @@
   --color-destructive-foreground: hsl(var(--destructive-foreground));
 
   --color-border: hsl(var(--border));
-  --color-input: hsl(var(--input));
-  --color-ring: hsl(var(--ring));
 
-  --color-chart-1: hsl(var(--chart-1));
-  --color-chart-2: hsl(var(--chart-2));
-  --color-chart-3: hsl(var(--chart-3));
-  --color-chart-4: hsl(var(--chart-4));
-  --color-chart-5: hsl(var(--chart-5));
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --breakpoint-3xl: 1720px;
+  --breakpoint-4xl: 1920px;
+  --breakpoint-5xl: 2560px;
 }
 
 /*
@@ -61,17 +51,17 @@
     border-color: var(--color-gray-200, currentColor);
   }
 }
-
 @layer base {
   :root {
-    --theme-primary: 223 82% 56%;
-    --theme-secondary: 234 3% 77%;
+    --theme-primary: 240 33% 30%;
+    --theme-secondary: 240 27% 45%;
   }
   .dark {
-    --theme-primary: 223 82% 56%;
-    --theme-secondary: 243 8% 45%;
+    --theme-primary: 240 33% 30%;
+    --theme-secondary: 240 27% 45%;
   }
 }
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -119,6 +109,7 @@
     --radius: 0.5rem;
   }
 }
+
 
 
 @layer base {

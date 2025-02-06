@@ -7,9 +7,11 @@ import { useHeader } from "./HeaderContext";
 import siteConfig from "@/site-config";
 import { cn } from "@/lib/utils";
 //import React from "react";
+import { useRef } from "react";
 
 export default function Header() {
-  const { isNavTransparent, isNavVisible, mainNavRef } = useHeader();
+  const { isNavTransparent, isNavVisible } = useHeader();
+  const mainNavRef = useRef<HTMLElement>(null);
   const { mainNav } = siteConfig.layout.header;
 
   return (
