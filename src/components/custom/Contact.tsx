@@ -1,10 +1,10 @@
 import { Section } from "@/components/layout/Section/Section";
 import { Typography } from "@/components/common/Typography/Typography";
-import MapComponent from "../Map";
+import MapComponent from "./Map";
 import {
   OfficeData,
   JobsData,
-} from "@/components/custom/Home/data/data-contact";
+} from "@/data/data-contact";
 import { cn } from "@/lib/utils";
 
 export default function Contact() {

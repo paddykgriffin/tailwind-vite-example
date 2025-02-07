@@ -11,7 +11,7 @@ export const primaryMenuLinks: Array<MenuItem> = [
   },
   {
     title: 'About Us',
-    path: '/',
+    path: '/about',
   },
   {
     title: 'Services',

@@ -2,15 +2,15 @@ import { Section } from "@/components/layout/Section/Section";
 import { Typography } from "@/components/common/Typography/Typography";
 import { Button } from "@/components/common/Button/Button";
 import { Container } from "@/components/layout/Container/Container";
-import { ProjectsData } from "@/components/custom/Home/data/data-work";
-
+import { ProjectsData } from "@/data/data-work";
+import { s3 } from "@/utils/s3";
 
 export default function LatestWork() {
   return (
     <Section className="text-center dark:bg-black" id="work">
       <Typography
         variant="h2"
-        className="mb-6 inline-block border-b-2 border-b-[#DFDFDF] pb-4 uppercase tracking-wide text-[#333333] dark:text-white"
+        className="mb-6 inline-block border-b-2 border-b-[#DFDFDF] pb-4 tracking-wide text-[#333333] uppercase dark:text-white"
       >
         Latest Work
       </Typography>
@@ -20,12 +20,12 @@ export default function LatestWork() {
         className="pb-6 text-3xl leading-[3rem] text-gray-500 dark:text-white"
       >
         We created{" "}
-        <span className="font-semibold text-primary dark:text-secondary">
+        <span className="text-primary dark:text-secondary font-semibold">
           unique
         </span>{" "}
         experiences for some of our clients have a look around at some of our
         latest completed{" "}
-        <span className="font-semibold text-primary dark:text-secondary">
+        <span className="text-primary dark:text-secondary font-semibold">
           websites.
         </span>
       </Typography>
@@ -35,7 +35,7 @@ export default function LatestWork() {
           {ProjectsData.map((item, i) => (
             <div key={i}>
               <img
-                src={item.image}
+                src={s3(item.image)}
                 width={264}
                 height={100}
                 alt={item.title}

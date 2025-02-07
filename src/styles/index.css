@@ -32,6 +32,9 @@
   --breakpoint-3xl: 1720px;
   --breakpoint-4xl: 1920px;
   --breakpoint-5xl: 2560px;
+
+  --font-*: initial;
+  --font-display: 'Inter';
 }
 
 /*

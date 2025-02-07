@@ -16,7 +16,7 @@ export function ModeToggle() {
       variant="icon"
       size="icon"
       disableElevation
-      className="ml-3 text-gray-800 rounded-xl dark:text-white hover:rounded-xl hover:cursor-pointer hover:text-white "
+      className="ml-3 text-white rounded-xl dark:text-white hover:rounded-xl hover:cursor-pointer hover:text-white "
     >
       <Icon
         icon="line-md:moon"

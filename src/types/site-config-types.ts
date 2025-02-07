@@ -8,11 +8,11 @@ export type SiteMode = {
 export type SiteConfig = {
   siteName: string;
   darkMode: boolean;
-  theme: {
-    color: {
-      primary: SiteMode;
-    };
-  },
+  // theme: {
+  //   color: {
+  //     primary: SiteMode;
+  //   };
+  // },
   layout: {
     container?: MaxWidthOption,
     header: {

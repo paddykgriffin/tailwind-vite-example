@@ -9,13 +9,13 @@ export default function About() {
       <div className="text-center">
         <Typography
           variant="h2"
-          className="mb-6 inline-block border-b-2 border-b-[#DFDFDF] pb-4 uppercase tracking-wide text-[#333333] dark:text-white"
+          className="mb-6 inline-block border-b-2 border-b-[#DFDFDF] pb-4 tracking-wide text-[#333333] uppercase dark:text-white"
         >
           About Us
         </Typography>
         <Typography
           variant="body1"
-          className="text-3xl text-primary dark:text-secondary"
+          className="text-primary dark:text-secondary text-3xl"
         >
           We are an innventive company priding ourselves on quaility solutions.
         </Typography>
@@ -39,7 +39,7 @@ export default function About() {
         <Button
           size={"large"}
           href="/about"
-          className="rounded-[8px] px-6 uppercase hover:shadow-lg dark:bg-primary"
+          className="dark:bg-primary rounded-[8px] px-6 uppercase hover:shadow-lg"
         >
           Find out more
         </Button>

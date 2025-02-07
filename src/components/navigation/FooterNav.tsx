@@ -1,25 +1,21 @@
-import React from 'react';
-import { FooterMenuLinks } from '../navigation/FooterMenuLinks';
+import { NavLink } from "react-router-dom";
+import { MenuItem } from "../navigation/FooterMenuLinks";
 
-const FooterNav = () => {
+interface Props {
+  data: MenuItem[];
+}
+
+const FooterNav = ({ data }: Props) => {
   return (
-    <div
-      style={{
-        display: 'flex',
-        gap: '16px',
-      }}
-    >
-      {FooterMenuLinks.map(item => (
-        <a
-          href={item.path}
+    <div className="flex flex-col gap-2 pt-4">
+      {data.map((item) => (
+        <NavLink
+          to={item.path}
           key={item.title}
-          style={{
-            fontSize: '0.875rem',
-            textDecoration: 'none',
-          }}
+          className="transition-all duration-500 hover:text-orange-500"
         >
           {item.title}
-        </a>
+        </NavLink>
       ))}
     </div>
   );

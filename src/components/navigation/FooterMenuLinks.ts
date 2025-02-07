@@ -4,17 +4,40 @@ export interface MenuItem {
   target?: string;
 }
 
-export const FooterMenuLinks: Array<MenuItem> = [
+export const LinksOne: Array<MenuItem> = [
   {
-    title: 'Privacy Statement',
-    path: '/',
+    title: "Web Design & Development",
+    path: "#",
   },
   {
-    title: 'Terms & Conditions',
-    path: '/',
+    title: "Ecommerce",
+    path: "#",
   },
   {
-    title: 'Cookie Policy',
-    path: '/',
+    title: "CMS",
+    path: "#",
   },
+  {
+    title: "Hosting",
+    path: "#",
+  },
+  {
+    title: "SEO",
+    path: "#",
+  }
+];
+
+export const LinksTwo: Array<MenuItem> = [
+{
+  title: "Company Information",
+  path: "#",
+},
+{
+  title: "What We've Done",
+  path: "#",
+},
+{
+  title: "Vacancies",
+  path: "#",
+}
 ];

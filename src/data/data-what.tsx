@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import { ReactElement } from "react";
 
 type WhatWeDoType = {
   title: string;
@@ -9,7 +9,7 @@ type WhatWeDoType = {
 export const WhatWeData: WhatWeDoType[] = [
   {
     title: "Design",
-    icon: "/images/img_design_icon.png",
+    icon: "img_design_icon.png",
     items: [
       { label: "Website Design" },
       { label: "UX/UI Design" },
@@ -19,7 +19,7 @@ export const WhatWeData: WhatWeDoType[] = [
   },
   {
     title: "consultancy",
-    icon: "/images/img_consultancy_icon.png",
+    icon: "img_consultancy_icon.png",
     items: [
       { label: <>Analytics &amp; Tracking</> },
       { label: "Mobile Design" },
@@ -29,7 +29,7 @@ export const WhatWeData: WhatWeDoType[] = [
   },
   {
     title: "development",
-    icon: "/images/img_development_icon.png",
+    icon: "img_development_icon.png",
     items: [
       { label: "eCommerce" },
       { label: "Sharepoint" },
