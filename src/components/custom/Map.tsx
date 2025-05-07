@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState, useCallback, useEffect } from "react";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
@@ -43,7 +41,7 @@ const MapComponent = () => {
 
   return (
     <LoadScript
-      googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || ""}
+      googleMapsApiKey={process.env.GOOGLE_MAPS_API_KEY || ""}
       // Make sure the 'marker' library is loaded
       version="beta" // Ensure you're using the version that supports AdvancedMarkerElement
     >
