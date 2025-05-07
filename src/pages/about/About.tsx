@@ -6,10 +6,12 @@ import { s3 } from "@/utils/s3";
 import { PanelData } from "@/data/data";
 import { NavLink } from "react-router-dom";
 import { FaAngleRight } from "react-icons/fa6";
+import HeroMini from "@/components/common/Hero/HeroMini";
 
 const About = () => {
   return (
     <Layout pageTitle="About">
+      <HeroMini />
       <Section>
         <div className="flex flex-col gap-4 border-b border-gray-300 pb-12 lg:grid lg:items-center">
           <Typography

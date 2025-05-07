@@ -57,7 +57,7 @@
 @layer base {
   :root {
     --theme-primary: 240 33% 30%;
-    --theme-secondary: 240 27% 45%;
+    --theme-secondary: 240 33% 30%;
   }
   .dark {
     --theme-primary: 240 33% 30%;

@@ -6,7 +6,7 @@ import { FaFacebook, FaGooglePlus, FaTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import Logo from "@/components/common/Logo/Logo";
 import { NavLink } from "react-router-dom";
-import { LinksOne, LinksTwo } from "@/components/navigation/FooterMenuLinks";
+import { LinksOne, LinksTwo } from "@/components/navigation/FooterNav";
 
 const Footer = () => {
   const year = new Date().getFullYear();

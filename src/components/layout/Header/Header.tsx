@@ -1,8 +1,8 @@
-import { ModeToggle } from "@/components/layout/Header/ModeToggle";
+import { ModeToggle } from "@/components/common/ModeToggle";
 import HeaderNav from "@/components/navigation/HeaderNav";
 import { Container } from "../Container/Container";
 import Logo from "@/components/common/Logo/Logo";
-import SidebarNav from "./SidebarNav";
+import SidebarNav from "@/components/navigation/SidebarNav";
 import { useHeader } from "./HeaderContext";
 import siteConfig from "@/site-config";
 import { cn } from "@/lib/utils";
@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header
-      className="fixed left-0 right-0 top-0 z-50 mr-[var(--removed-body-scroll-bar-size)] transition-[top] duration-300"
+      className="fixed top-0 right-0 left-0 z-50 mr-[var(--removed-body-scroll-bar-size)] transition-[top] duration-300"
       id="main-header"
       style={{
         top: !isNavVisible ? -(mainNavRef.current?.offsetHeight || "80px") : 0,
@@ -31,7 +31,13 @@ export default function Header() {
         })}
       >
         <Container
-          className="flex flex-wrap items-center justify-between gap-2 p-8"
+          className={cn(
+            "flex flex-wrap items-center justify-between gap-2 p-8",
+            {
+              "p-8": isNavTransparent,
+              "p-2": !isNavTransparent,
+            },
+          )}
           maxWidth="4xl"
         >
           <div className="max-h-16 md:max-h-12">

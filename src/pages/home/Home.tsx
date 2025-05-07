@@ -11,6 +11,7 @@ import {
   SubTitle,
   ScrollIcon,
 } from "@/components/common/Hero/Hero";
+import { s3 } from "@/utils/s3";
 
 const Home = () => {
   return (
@@ -18,14 +19,15 @@ const Home = () => {
       <Hero>
         <Background
           type="img"
-          src="https://picsum.photos/id/1/1920/600"
-          srcMobile="/images/hero-mobile.png"
+          src={s3("hero.png")}
+          srcMobile={s3("hero-mobile.png")}
         />
         <Content className="items-center text-center">
-          <Title className="leading-18 m-5  text-white">Main Tagline</Title>
-          <SubTitle className="m-5 text-white max-w-[900px] mx-auto">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-            molestiae laborum eum minima itaque praesentium.
+          <Title className="leading-18 text-white">
+            Are you a growing company?
+          </Title>
+          <SubTitle className="mx-auto max-w-[900px] text-white">
+            we can provide the right website for you to grow your business.
           </SubTitle>
         </Content>
         <ScrollIcon align="center" />

@@ -50,7 +50,7 @@ export default function What() {
 
               <Typography
                 variant="h3"
-                className="mb-4 font-bold uppercase dark:text-white"
+                className="mb-4 font-semibold capitalize dark:text-white"
               >
                 {item.title}
               </Typography>

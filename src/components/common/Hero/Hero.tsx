@@ -69,7 +69,7 @@ const Background = ({
       "opacity-0": !isLoaded,
       "opacity-100": isLoaded,
       "lg:h-[14vh] xl:h-[14vh]": subPageHero === true,
-    }
+    },
   );
 
   const { width } = useWindowSize();
@@ -79,7 +79,7 @@ const Background = ({
       {!isLoaded && !hideSkeleton && (
         <Skeleton
           className={cn(
-            "inset-0 z-10 col-start-1 row-start-1 h-[40vh] w-full transition-all duration-500 md:h-[60vh] lg:h-[95vh] xl:h-[95vh]"
+            "inset-0 z-10 col-start-1 row-start-1 h-[40vh] w-full transition-all duration-500 md:h-[60vh] lg:h-[95vh] xl:h-[95vh]",
           )}
         />
       )}{" "}
@@ -107,11 +107,11 @@ const Background = ({
       {!hideTransparentLayer && (
         <div
           className={cn(
-            "inset-0 col-start-1 row-start-1 bg-black/50 transition-opacity duration-500",
+            "inset-0 col-start-1 row-start-1 bg-black/70 transition-opacity duration-500",
             {
               "opacity-0": !isLoaded,
               "opacity-100": isLoaded,
-            }
+            },
           )}
           aria-hidden="true"
         />
@@ -187,7 +187,7 @@ const ScrollIcon = ({ className, align = "right" }: ScrollIconProps) => {
             type="button"
             className={cn(
               "animate-[bounce_4s_infinite] cursor-pointer",
-              className
+              className,
             )}
           >
             <div className="z-20 flex flex-col items-center gap-2">
@@ -228,7 +228,7 @@ const Hero: React.FC<HeroProps> & HeroComposition = Object.assign(
     Title,
     SubTitle,
     ScrollIcon,
-  }
+  },
 );
 
 export { Hero, Background, Content, Title, SubTitle, ScrollIcon };
