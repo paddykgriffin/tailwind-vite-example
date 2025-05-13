@@ -34,7 +34,7 @@ const HeaderNav = () => {
     <div className="flex gap-4 text-gray-500">
       {primaryMenuLinks.map((item) => (
         <NavLink
-          className="text-white dark:text-white"
+          className="text-white dark:text-white [&.active]:text-yellow-500"
           to={item.path}
           key={item.title}
           style={{

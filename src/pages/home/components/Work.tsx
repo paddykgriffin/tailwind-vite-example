@@ -58,7 +58,6 @@ export default function LatestWork() {
       <Button
         size={"large"}
         href="/latest-work"
-        target="_blank"
         className="rounded-[4px] px-6 uppercase hover:shadow-lg"
       >
         View More Projects

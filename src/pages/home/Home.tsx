@@ -1,8 +1,8 @@
-import LatestWork from "@/components/custom/Work";
+import LatestWork from "@/pages/home/components/Work";
 import Layout from "../../components/layout/Layout";
-import Contact from "@/components/custom/Contact";
-import About from "@/components/custom/About";
-import What from "@/components/custom/What";
+import Contact from "@/pages/home/components/Contact";
+import About from "@/pages/home/components/About";
+import What from "@/pages/home/components/What";
 import {
   Hero,
   Background,

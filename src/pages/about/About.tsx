@@ -43,7 +43,10 @@ const About = () => {
           />
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-3 xl:px-24">
+        <div
+          className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-3 xl:px-24"
+          id="more"
+        >
           {PanelData.map((item, i) => (
             <div className="panel shadow-lg drop-shadow-xl" key={i}>
               <img

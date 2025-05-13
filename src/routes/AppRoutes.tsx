@@ -2,9 +2,9 @@ import { createRoutesFromElements, Route } from "react-router-dom";
 import Home from "../pages/home/Home";
 import NotFound from "../pages/NotFoundPage";
 import About from "@/pages/about/About";
-import What from "@/components/custom/What";
-import LatestWork from "@/components/custom/Work";
-import Contact from "@/components/custom/Contact";
+import What from "@/pages/what/What";
+import LatestWork from "@/pages/work/Work";
+import Contact from "@/pages/contact/Contact";
 
 export const AppRoutes = () => {
   return createRoutesFromElements(

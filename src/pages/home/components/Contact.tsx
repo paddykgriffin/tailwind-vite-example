@@ -1,6 +1,6 @@
 import { Section } from "@/components/layout/Section/Section";
 import { Typography } from "@/components/common/Typography/Typography";
-import MapComponent from "./Map";
+import MapComponent from "@/components/common/Map";
 import { OfficeData, JobsData } from "@/data/data-contact";
 import { cn } from "@/lib/utils";
 
