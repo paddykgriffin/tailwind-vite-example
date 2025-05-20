@@ -8,6 +8,7 @@ import HeroMini from "../common/Hero/HeroMini";
 import { Section } from "../layout/Section/Section";
 import { s3 } from "@/utils/s3";
 import { LuChevronsLeft } from "react-icons/lu";
+import { Button } from "../common/Button/Button";
 
 const ProjectDetail = () => {
   // Get the route parameter
@@ -56,12 +57,9 @@ const ProjectDetail = () => {
         </div>
 
         <div className="text-center">
-          <Link
-            to="/latest-work"
-            className="hover:bg-primary global-transition bg-secondary mx-auto inline-flex items-center px-10 py-4 text-xl text-gray-100"
-          >
+          <Button size={"large"} href="/latest-work" className="btn">
             <LuChevronsLeft className="mr-2 h-4 w-4" /> Back to projects
-          </Link>
+          </Button>
         </div>
       </Section>
     </Layout>

@@ -9,7 +9,7 @@ export default function SiteLogo() {
   const LogoToRender = currentTheme === "dark" ? LogoDark : LogoDark;
 
   return (
-    <NavLink to="/">
+    <NavLink to="/" className="global-transition hover:opacity-70">
       <img
         src={LogoToRender}
         alt={siteConfig.siteName}

@@ -82,7 +82,7 @@ const FooterNav = ({ data }: Props) => {
         <NavLink
           to={item.path}
           key={item.title}
-          className="transition-all duration-500 hover:text-orange-500"
+          className="transition-all duration-500 hover:text-yellow-500"
           onClick={(e) => handleClick(e, item.path)}
         >
           {item.title}

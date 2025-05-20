@@ -70,11 +70,7 @@ export default function What() {
         </div>
       </Container>
 
-      <Button
-        size={"large"}
-        href="/what-we-do"
-        className="dark:bg-primary rounded-[4px] px-6 uppercase hover:shadow-lg"
-      >
+      <Button size={"large"} href="/what-we-do" className="btn">
         Find out more
       </Button>
     </Section>

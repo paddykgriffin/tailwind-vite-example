@@ -145,7 +145,7 @@ html {
 
 
 .btn {
-  @apply px-4 py-10 font-normal text-2xl bg-secondary hover:bg-secondary/90
+  @apply px-6 py-8 font-normal text-xl bg-secondary hover:bg-secondary/90 hover:shadow-lg uppercase rounded-xl
 }
 .global-transition {
   @apply transition-all duration-300

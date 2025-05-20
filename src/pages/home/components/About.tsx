@@ -36,11 +36,7 @@ export default function About() {
           />
         </div>
 
-        <Button
-          size={"large"}
-          href="/about"
-          className="dark:bg-primary rounded-[8px] px-6 uppercase hover:shadow-lg"
-        >
+        <Button size={"large"} href="/about" className="btn">
           Find out more
         </Button>
       </div>

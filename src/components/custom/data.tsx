@@ -210,7 +210,7 @@ export const projects: Project[] = [
     },
   },
   {
-    id: 5,
+    id: 6,
     name: "Project Six",
     thumbnail: "projectSix.png", // List Image
     details: {

@@ -49,7 +49,7 @@ const Footer = () => {
                 <li className="py-2 md:py-0 md:py-4">
                   <NavLink
                     to="tel:011235690"
-                    className="transition-all duration-500 hover:text-orange-500"
+                    className="transition-all duration-500 hover:text-yellow-500"
                   >
                     01 123 5690
                   </NavLink>
@@ -57,7 +57,7 @@ const Footer = () => {
                 <li className="py-2 md:py-0 md:py-4">
                   <NavLink
                     to="mailto:info@companyname.com"
-                    className="transition-all duration-500 hover:text-orange-500"
+                    className="transition-all duration-500 hover:text-yellow-500"
                   >
                     info@companyname.com
                   </NavLink>

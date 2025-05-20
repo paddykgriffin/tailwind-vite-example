@@ -40,11 +40,7 @@ export default function LatestWork() {
         </div>
       </Container>
 
-      <Button
-        size={"large"}
-        href="/latest-work"
-        className="rounded-[4px] px-6 uppercase hover:shadow-lg"
-      >
+      <Button size={"large"} href="/latest-work" className="btn">
         View More Projects
       </Button>
     </Section>
