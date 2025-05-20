@@ -64,7 +64,7 @@ const Background = ({
   }, [type, setIsLoaded]);
 
   const mediaClass = cn(
-    "col-start-1 row-start-1 h-auto lg:h-[80vh] xl:h-[90vh] w-full transition-opacity duration-500",
+    "col-start-1 row-start-1 h-auto md:h-[80vh] xl:h-[90vh] w-full transition-opacity duration-500",
     {
       "opacity-0": !isLoaded,
       "opacity-100": isLoaded,

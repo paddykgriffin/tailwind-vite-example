@@ -13,19 +13,19 @@ export interface MenuItem {
 export const LinksOne: Array<MenuItem> = [
   {
     title: "Web Design & Development",
-    path: "/what-we-do#web-design",
+    path: "/what-we-do#web-design-&-development",
   },
   {
     title: "Ecommerce",
-    path: "/what-we-do#ecommerce",
+    path: "/what-we-do#ecommerce-platforms",
   },
   {
     title: "CMS",
-    path: "/what-we-do#cms",
+    path: "/what-we-do#content-mangement-systems",
   },
   {
     title: "SEO",
-    path: "/what-we-do#seo",
+    path: "/what-we-do#search-engine-optimization",
   },
 ];
 

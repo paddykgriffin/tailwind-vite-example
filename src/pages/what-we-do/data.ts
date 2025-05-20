@@ -3,7 +3,6 @@ interface WhatWeDo {
     content: string[];
     image: string;
     alignment: boolean,
-    slug: string;
 }
 
 
@@ -17,7 +16,6 @@ export const WhatWeDoData: WhatWeDo[] = [
         ],
         image: "img_design_development.jpg",
         alignment: true,
-        slug: "web-design"
     },
     {
         title: "eCommerce Platforms",
@@ -27,7 +25,6 @@ export const WhatWeDoData: WhatWeDo[] = [
         ],
         image: "img_ecommerce.jpg",
         alignment: false,
-        slug: 'ecommerce'
     },
     {
         title: "Content Mangement Systems",
@@ -37,7 +34,6 @@ export const WhatWeDoData: WhatWeDo[] = [
         ],
         image: "img_content_management_systems.jpg",
         alignment: true,
-        slug: 'cms'
     },
     {
         title: "Search Engine Optimization",
@@ -47,6 +43,5 @@ export const WhatWeDoData: WhatWeDo[] = [
         ],
         image: "img_marketing.jpg",
         alignment: false,
-        slug: 'seo'
     }
 ];

@@ -20,7 +20,7 @@ export default function What() {
 
       <Typography
         variant="body1"
-        className="pb-6 text-3xl leading-[3rem] text-gray-500 dark:text-white"
+        className="pb-6 text-xl text-gray-500 md:text-3xl md:leading-[3rem] dark:text-white"
       >
         We have gained a wealth of{" "}
         <span className="text-primary dark:text-secondary font-semibold">
@@ -72,8 +72,7 @@ export default function What() {
 
       <Button
         size={"large"}
-        href="#"
-        target="_blank"
+        href="/what-we-do"
         className="dark:bg-primary rounded-[4px] px-6 uppercase hover:shadow-lg"
       >
         Find out more

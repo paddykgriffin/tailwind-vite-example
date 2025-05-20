@@ -1,7 +1,7 @@
 import { type SiteConfig } from './types/site-config-types';
 
 const siteConfig: SiteConfig = {
-  siteName: 'Site Boilerplate',
+  siteName: 'Design Agency',
   darkMode: true,
   // theme: {
   //   color: {

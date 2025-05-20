@@ -15,13 +15,13 @@ export default function About() {
         </Typography>
         <Typography
           variant="body1"
-          className="text-primary dark:text-secondary text-3xl"
+          className="text-primary dark:text-secondary text-xl md:text-3xl"
         >
           We are an innventive company priding ourselves on quaility solutions.
         </Typography>
         <Typography
           variant="body1"
-          className="text-3xl text-gray-500 dark:text-white"
+          className="text-xl text-gray-500 md:text-3xl dark:text-white"
         >
           We excel in web/mobile design &amp; development.
         </Typography>

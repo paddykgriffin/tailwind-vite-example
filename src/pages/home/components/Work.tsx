@@ -2,8 +2,8 @@ import { Section } from "@/components/layout/Section/Section";
 import { Typography } from "@/components/common/Typography/Typography";
 import { Button } from "@/components/common/Button/Button";
 import { Container } from "@/components/layout/Container/Container";
-import { ProjectsData } from "@/data/data-work";
-import { s3 } from "@/utils/s3";
+import { projects } from "@/components/custom/data";
+import ProjectBlock from "@/components/custom/ProjectBlock";
 
 export default function LatestWork() {
   return (
@@ -17,41 +17,26 @@ export default function LatestWork() {
 
       <Typography
         variant="body1"
-        className="pb-6 text-3xl leading-[3rem] text-gray-500 dark:text-white"
+        className="pb-6 text-xl text-gray-500 md:text-3xl md:leading-[3rem] dark:text-white"
       >
         We created{" "}
         <span className="text-primary dark:text-secondary font-semibold">
           unique
         </span>{" "}
-        experiences for some of our clients have a look around at some of our
-        latest completed{" "}
+        experiences for our clients have a look around at some of our latest
+        completed{" "}
         <span className="text-primary dark:text-secondary font-semibold">
           websites.
         </span>
       </Typography>
 
       <Container>
-        <div className="grid gap-6 pb-12 md:grid-cols-4">
-          {ProjectsData.map((item, i) => (
-            <div key={i}>
-              <img
-                src={s3(item.image)}
-                width={264}
-                height={100}
-                alt={item.title}
-                style={{ width: "100%", height: "auto" }}
-              />
-              <Typography variant="h3" className="pt-4 dark:text-white">
-                {item.title}
-              </Typography>
-              <Typography
-                variant="body1"
-                className="text-gray-500 dark:text-white"
-              >
-                {item.subtitle}
-              </Typography>
-            </div>
-          ))}
+        <div className="grid gap-6 pb-12 md:grid-cols-3">
+          {projects
+            .filter((project) => project.showOnHome)
+            .map((item, i) => (
+              <ProjectBlock key={item.id} {...item} />
+            ))}
         </div>
       </Container>
 

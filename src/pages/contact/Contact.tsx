@@ -28,10 +28,10 @@ const Contact = () => {
         </div>
         <div className="grid gap-8 md:grid-cols-2">
           <div>
-            <div className="alert mb-9 rounded-xl bg-red-900 p-4 mr-18p">
+            <div className="alert mr-18p mb-9 rounded-xl bg-red-900 p-4">
               this form is for illustration only
             </div>
-            <form action="" className="pr-18">
+            <form action="" className="md:pr-18">
               <div className="pb-8">
                 <label
                   htmlFor=""

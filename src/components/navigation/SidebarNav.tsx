@@ -63,7 +63,7 @@ export default function SidebarNav() {
                       onClick={handleLinkClick}
                       to={item.path}
                       className={cn(
-                        `aria-[current=page]:text-primary grow px-6 py-4 font-bold text-black transition-colors hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700`,
+                        `aria-[current=page]:text-primary grow px-6 py-4 text-black transition-colors hover:bg-gray-100 aria-[current=page]:font-bold dark:text-white dark:hover:bg-gray-700`,
                       )}
                     >
                       {item.title}

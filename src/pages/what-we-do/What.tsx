@@ -4,6 +4,7 @@ import Layout from "@/components/layout/Layout";
 import { Section } from "@/components/layout/Section/Section";
 import { WhatWeDoData } from "./data";
 import { s3 } from "@/utils/s3";
+import { slugify } from "@/utils/slugify";
 
 const What = () => {
   return (
@@ -17,7 +18,10 @@ const What = () => {
           >
             What We Do
           </Typography>
-          <Typography variant={"body1"} className="text-2xl leading-8">
+          <Typography
+            variant={"body1"}
+            className="text-2xl leading-8 [&_br]:hidden md:[&_br]:block"
+          >
             We provide a wide{" "}
             <span className="highlight">range of services,</span> see below some
             of the
@@ -28,9 +32,9 @@ const What = () => {
 
         {WhatWeDoData.map((item, i) => (
           <div
-            id={item.slug}
+            id={`${slugify(item.title)}`}
             key={i}
-            className={`flex flex-col items-center justify-center gap-12 border-b-2 border-gray-200 py-24 last:border-b-0 ${
+            className={`flex flex-col items-center justify-center gap-12 border-b-2 border-gray-200 py-8 last:border-b-0 md:py-24 ${
               item.alignment ? "md:flex-row" : "md:flex-row-reverse"
             }`}
           >

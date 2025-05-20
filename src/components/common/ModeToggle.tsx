@@ -16,18 +16,18 @@ export function ModeToggle() {
       variant="icon"
       size="icon"
       disableElevation
-      className="ml-3 text-white rounded-xl dark:text-white hover:rounded-xl hover:cursor-pointer hover:text-white "
+      className="ml-3 rounded-xl text-gray-900 hover:cursor-pointer hover:rounded-xl hover:text-white lg:text-white dark:text-white"
     >
       <Icon
         icon="line-md:moon"
         className={`size-6 transition-all ${
-          currentTheme === "dark" ? "-rotate-90 scale-0" : "-rotate-0 scale-100"
+          currentTheme === "dark" ? "scale-0 -rotate-90" : "scale-100 -rotate-0"
         }`}
       />
       <Icon
         icon="line-md:sunny-filled-loop"
         className={`absolute size-6 transition-all ${
-          currentTheme === "dark" ? "-rotate-90 scale-100" : "-rotate-0 scale-0"
+          currentTheme === "dark" ? "scale-100 -rotate-90" : "scale-0 -rotate-0"
         }`}
       />
       <span className="sr-only">

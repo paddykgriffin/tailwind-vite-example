@@ -1,6 +1,5 @@
 @import 'tailwindcss';
-
-/* @plugin 'tailwindcss-animate'; */
+@plugin 'tailwindcss-animate';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -141,4 +140,13 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+
+
+.btn {
+  @apply px-4 py-10 font-normal text-2xl bg-secondary hover:bg-secondary/90
+}
+.global-transition {
+  @apply transition-all duration-300
 }

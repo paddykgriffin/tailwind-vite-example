@@ -22,7 +22,7 @@ const About = () => {
           </Typography>
           <Typography
             variant={"body1"}
-            className="col-start-1 col-end-3 text-center leading-[2.5rem] md:text-left dark:text-white"
+            className="col-start-1 col-end-3 text-center md:text-left md:leading-[2.5rem] dark:text-white"
           >
             Amet ad tempor fugiat amet dolor id enim sint ut occaecat cillum
             sint commodo deserunt. Sunt cupidatat duis ut ex esse incididunt
