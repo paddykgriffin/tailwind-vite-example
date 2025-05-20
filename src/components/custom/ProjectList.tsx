@@ -4,7 +4,7 @@ import ProjectBlock from "./ProjectBlock";
 const ProjectList = () => {
   return (
     <>
-      {projects.map((item, i) => (
+      {projects.map((item) => (
         <ProjectBlock key={item.id} {...item} />
       ))}
     </>

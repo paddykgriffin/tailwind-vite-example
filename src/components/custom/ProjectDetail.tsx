@@ -1,5 +1,5 @@
 import { Project } from "@/types/common.types";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { projects } from "./data";
 import { Typography } from "../common/Typography/Typography";
 import Layout from "../layout/Layout";

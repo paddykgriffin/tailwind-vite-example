@@ -34,7 +34,7 @@ export default function LatestWork() {
         <div className="grid gap-6 pb-12 md:grid-cols-3">
           {projects
             .filter((project) => project.showOnHome)
-            .map((item, i) => (
+            .map((item) => (
               <ProjectBlock key={item.id} {...item} />
             ))}
         </div>
